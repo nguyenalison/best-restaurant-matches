@@ -9,6 +9,8 @@ Cuisine(Chinese, American, Thai, etc.)
 - What effect of special characters or spaces
 - " tasty" vs "tasty"
 - Ask the user for company location? 
+- What can I do to make my submission to stand out from the rest of the candidates 
+
 ## Task Flow
 - Ask the user to input their parameters but empty for none
 - Display all the matches

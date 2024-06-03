@@ -57,13 +57,11 @@ public class Restaurant {
 
     @java.lang.Override
     public java.lang.String toString() {
-        return "Restaurant{" +
-                "name='" + name + '\'' +
-                ", customerRating=" + customerRating +
-                ", distance=" + distance +
-                ", price=" + price +
-                ", cuisine='" + cuisine + '\'' +
-                '}';
+        return "\nRestaurant: " + name + '\'' +
+                " Rating: " + customerRating +
+                " Distance: " + distance +
+                " Price: " + price +
+                " Cuisine: '" + cuisine + '\'';
     }
 
 }

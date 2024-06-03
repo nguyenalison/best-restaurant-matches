@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0689d80d-10ef-4c0d-9abb-157f302284a2" name="Changes" comment="MatchingService">
+    <list default="true" id="0689d80d-10ef-4c0d-9abb-157f302284a2" name="Changes" comment="matchbyName change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/model/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/model/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/repository/CuisineRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/repository/CuisineRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/service/MatchingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/service/MatchingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +29,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -95,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717268342539</updated>
       <workItem from="1717268343621" duration="8016000" />
-      <workItem from="1717364750365" duration="13378000" />
+      <workItem from="1717364750365" duration="19027000" />
     </task>
     <task id="LOCAL-00001" summary="MatchingService">
       <option name="closed" value="true" />
@@ -105,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717393312797</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="matchbyName change">
+      <option name="closed" value="true" />
+      <created>1717393980025</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717393980025</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MatchingService" />
-    <option name="LAST_COMMIT_MESSAGE" value="MatchingService" />
+    <MESSAGE value="matchbyName change" />
+    <option name="LAST_COMMIT_MESSAGE" value="matchbyName change" />
   </component>
 </project>

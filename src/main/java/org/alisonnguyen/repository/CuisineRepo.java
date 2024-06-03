@@ -16,7 +16,7 @@ public class CuisineRepo extends DataLoader{
     @Override
     protected void processLine(String[]row){
         int cuisineId = Integer.parseInt(row[0]);
-        String cuisineName = row[1];
+        String cuisineName = row[1].toLowerCase();
 
         Cuisine cuisine = new Cuisine(cuisineId,cuisineName);
         cuisineData.put(cuisineId,cuisineName);
