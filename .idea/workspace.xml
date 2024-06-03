@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0689d80d-10ef-4c0d-9abb-157f302284a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/service/MatchingCriteria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/model/Cuisine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/model/Cuisine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/model/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/model/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/repository/CuisineRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/repository/CuisineRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/repository/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/repository/DataLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/repository/RestaurantRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/repository/RestaurantRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/service/MatchingCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alisonnguyen/service/MatchingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/restaurants.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/restaurants.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,38 +30,58 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2hI4dGI6w5g0pI4aUZHU0XzS5vB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/data" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.alisonnguyen.Main" />
+      <module name="best-restaurant-match" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.alisonnguyen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -83,6 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717268342539</updated>
       <workItem from="1717268343621" duration="8016000" />
+      <workItem from="1717364750365" duration="12713000" />
     </task>
     <servers />
   </component>

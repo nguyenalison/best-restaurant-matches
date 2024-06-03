@@ -3,6 +3,7 @@ package org.alisonnguyen;
 import org.alisonnguyen.model.Restaurant;
 import org.alisonnguyen.repository.CuisineRepo;
 import org.alisonnguyen.repository.RestaurantRepo;
+import org.alisonnguyen.service.MatchingService;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -11,17 +12,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        String FILE = "src/main/resources/data/restaurants.csv";
 
-        RestaurantRepo restaurantRepo = new RestaurantRepo("src/main/resources/data/restaurants.csv");
-        Map<String, Restaurant> restaurantData = restaurantRepo.getAllData();
-//        restaurantData.forEach((k,v) -> System.out.println(v));
+        RestaurantRepo restaurantRepo = new RestaurantRepo(FILE);
+        MatchingService matchingService = new MatchingService(restaurantRepo);
 
-        Scanner scanner = new Scanner(System.in);
-        String userInputRestaurant;
-        int userInputRating, userInputDistance, userInputPrice, userInputCuisine;
-
-        System.out.println("Enter the name of the restaurant (Leave blank if none): ");
-        userInputRestaurant = scanner.nextLine();
+        System.out.println(matchingService.matchByName(" mcd"));
+        System.out.println(matchingService.matchByRating(3));
+//        Scanner scanner = new Scanner(System.in);
+//        String userInputRestaurant;
+//        int userInputRating, userInputDistance, userInputPrice, userInputCuisine;
+//
+////        System.out.println("Enter the name of the restaurant (Leave blank if none): ");
+//        userInputRestaurant = scanner.nextLine();
 
 
 //        System.out.println("Enter your preferred rating (Leave blank if none): ");

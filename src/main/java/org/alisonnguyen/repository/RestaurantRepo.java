@@ -7,10 +7,10 @@ import java.io.IOException;
 import java.util.*;
 
 public class RestaurantRepo extends DataLoader{
-    private Map<String, Restaurant> restaurantData = new HashMap<>();
-    private String CUISINE_PATH = "src/main/resources/data/cuisines.csv";
-    private CuisineRepo cuisineRepo = new CuisineRepo(CUISINE_PATH);
-    private Map<Integer, String> cuisineData = cuisineRepo.getAllData();
+    private final Map<String, Restaurant> restaurantData = new HashMap<>();
+    private final String CUISINE_PATH = "src/main/resources/data/cuisines.csv";
+    private final CuisineRepo cuisineRepo = new CuisineRepo(CUISINE_PATH);
+    private final Map<Integer, String> cuisineData = cuisineRepo.getAllData();
 
     public RestaurantRepo(String filePath) throws IOException {
         loadData(filePath);
@@ -33,7 +33,6 @@ public class RestaurantRepo extends DataLoader{
 
     private String matchCuisinesToRestaurant(String cuisineId) throws IOException {
         if(cuisineData.containsKey(Integer.parseInt(cuisineId) )){
-//            System.out.println("!!Cuisine id: " + cuisineId + " name: " + cuisineData.get(Integer.parseInt(cuisineId)));
             return cuisineData.get(Integer.parseInt(cuisineId));
         }else {
             System.out.println("Cuisine id does NOT exist");

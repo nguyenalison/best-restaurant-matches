@@ -6,9 +6,13 @@ Cuisine(Chinese, American, Thai, etc.)
 ## Questions
 - What makes the parameters invalid?
 - What will happen with cases when its like 'Pie Bar' and 'Bar Pie'
+- What effect of special characters or spaces
+- " tasty" vs "tasty"
+- Ask the user for company location? 
 ## Task Flow
 - Ask the user to input their parameters but empty for none
 - Display all the matches
+
 
 ## Models
 Restaurant class
@@ -48,6 +52,13 @@ Questions I would ask client/team before proceeding with either approach
 For this implementation, I have favored using multiple hashmaps. Here are my reasons.
 1. Favoring the user's experience. Should this code be used in an application user's experience would be more satisfied
    with a quick search
-2. 
 
+## Best Matches
+Matching Criteria 
+
+ByName:
+- position of the match 
+- length of name 
+- frequency of substring 
+- lexicographical order final
 
