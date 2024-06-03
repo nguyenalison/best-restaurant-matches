@@ -20,40 +20,13 @@ public class MatchingService {
     }
 
     public List<Restaurant> matchByName(String userInput) {
-        Set<String> restaurantNames = restaurantData.keySet();
-        String userInputLower = userInput.toLowerCase();
-
-        return restaurantNames.stream()
-                .filter(name -> name.toLowerCase().contains(userInputLower))
-                .sorted((name1, name2) -> {
-                    String name1Lower = name1.toLowerCase();
-                    String name2Lower = name2.toLowerCase();
-
-                    int index1 = name1Lower.indexOf(userInputLower);
-                    int index2 = name2Lower.indexOf(userInputLower);
-
-                    // compare by index of first occurrence
-                    if (index1 != index2) {
-                        return Integer.compare(index1, index2);
-                    }
-
-                    // compare by length of name
-                    int lengthComparison = Integer.compare(name1.length(), name2.length());
-                    if (lengthComparison != 0) {
-                        return lengthComparison;
-                    }
-
-                    // compare by frequency of occurrence of the substring
-                    long count1 = name1Lower.split(userInputLower, -1).length - 1;
-                    long count2 = name2Lower.split(userInputLower, -1).length - 1;
-                    int frequencyComparison = Long.compare(count2, count1);
-                    if (frequencyComparison != 0) {
-                        return frequencyComparison;
-                    }
-                    return name1Lower.compareTo(name2Lower);
-                })
-                .map(name -> restaurantData.get(name))
-                .collect(Collectors.toList());
+        List<Restaurant> matches = new ArrayList<>();
+        restaurantData.forEach((k,v) -> {
+            if (v.getName().contains(userInput.toLowerCase())){
+                matches.add(v);
+            }
+        });
+        return matches;
     }
 
     public List<Restaurant> matchByRating(int preferredRating) {

@@ -17,7 +17,7 @@ public class Main {
         RestaurantRepo restaurantRepo = new RestaurantRepo(FILE);
         MatchingService matchingService = new MatchingService(restaurantRepo);
 
-        System.out.println(matchingService.matchByName(" mcd"));
+        System.out.println(matchingService.matchByName("mcd"));
         System.out.println(matchingService.matchByRating(3));
 //        Scanner scanner = new Scanner(System.in);
 //        String userInputRestaurant;
